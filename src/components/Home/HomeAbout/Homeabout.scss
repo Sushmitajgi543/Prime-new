@@ -1,0 +1,54 @@
+.home-about {
+    background-image: url("../../../assets/Image/home-about.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    // padding: 0 14rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .container-custom{
+        display: flex;
+        height: 100%;
+    }
+
+    &-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-size: 14rem;
+            color: rgb(237, 231, 231);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+    }
+    &-right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        padding-left: 6rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h3 {
+            font-size: 5rem;
+            font-weight: 300;
+            color: rgb(253, 253, 253);
+            text-align: left;
+        }
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.header-section {
+    width: 100%;
+
+  
+.container-custom  {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 7rem;
+        padding-right: 0;
+    }
+
+    &-logo {
+        width: 50%;
+        div {
+            width: 30%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &-menu {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        &-hr {
+            width: 100%;
+            hr {
+                color: rgb(255, 255, 255);
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 3rem 0;
+            width: 100%;
+
+            &-para {
+                p {
+                    color: rgb(255, 255, 255);
+                    font-size: 2rem;
+                    font-weight: 400;
+                    text-align: left;
+
+                    a {
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        font-size: 2rem;
+                        font-weight: 400;
+                        text-align: left;
+                    }
+                }
+            }
+
+            &-list {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        padding: 1rem 7rem 1rem 0;
+
+                        a {
+                            color: rgb(255, 255, 255);
+                            text-decoration: none;
+                            font-size: 2.2rem;
+                            text-transform: uppercase;
+                            font-weight: 0;
+                            letter-spacing: 0.6px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
