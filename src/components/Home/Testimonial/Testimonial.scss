@@ -74,3 +74,33 @@
         padding-left: 4rem;
     }
 }
+
+// responsive==============================================
+@media screen and (max-width: 768px) {
+.testimonial{
+    height: 45vh;
+
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    .testimonial{
+        height: 45vh;
+    
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .testimonial{
+        height: 60vh;
+    
+    }
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px) {
+//     .testimonial{
+//         height: 45vh;
+    
+//     }
+// }

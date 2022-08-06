@@ -7,21 +7,12 @@
     justify-content: center;
     align-items: flex-start;
     padding: 1rem 0rem;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
 
     .container-custom{
         display: flex;
         flex-direction: column;
         padding: 0;
         justify-content: center;
-
-
-        
-
-        
     }
     h1{
         padding-left: 15rem;
@@ -116,3 +107,43 @@
         }
     }
 }
+
+// responsive==============================================
+@media screen and (max-width: 768px) {
+    .our-goals{
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .our-goals{
+        height: 80vh;
+    }
+    .our-goals-content-right{
+        display: flex;
+        align-items: center;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .our-goals{
+        height: 90vh;
+    }
+    .our-goals-content-right{
+        display: flex;
+        align-items: center;
+        background-position: center;
+    }
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px) {
+//     .our-goals{
+//         height: 80vh;
+//     }
+//     .our-goals-content-right{
+//         display: flex;
+//         align-items: center;
+//         background-position: center;
+//     }
+// }

@@ -25,14 +25,9 @@
         justify-content: center;
 
         h1 {
-            font-size: 5rem;
-            font-weight: 550;
             text-align: left;
             padding-bottom: 2rem;
-            color: rgb(77, 115, 116);
-            text-transform: uppercase;
             line-height: 1.5;
-            font-family: sans-serif;
         }
         p {
             font-size: 4rem;
@@ -54,3 +49,32 @@
         width: 25%;
     }
 }
+
+// responsive==============================================
+@media screen and (max-width: 768px) {
+    .Prime-developer{
+
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .Prime-developer{
+
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .Prime-developer{
+
+        height: 45vh;
+    }
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px) {
+//     .Prime-developer{
+
+//         height: 45vh;
+//     }
+// }

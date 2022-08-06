@@ -55,3 +55,31 @@
         }
     }
 }
+
+
+// responsive==============================================
+@media screen and (max-width: 768px) {
+
+    .home-about {
+        height: 40vh;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .home-about {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .home-about {
+        height: 50vh;
+    }
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px) {
+//     .home-about {
+//         height: 40vh;
+//     }
+// }

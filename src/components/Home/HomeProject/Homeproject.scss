@@ -21,7 +21,7 @@
         &-1,
         &-2 {
             width: 50%;
-            height: 50vh;
+            height: 40vh;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -47,7 +47,7 @@
             h3 {
                 text-align: left;
                 font-weight: 500;
-                padding-right: 30rem;
+                padding-right: 25rem;
                 font-size: 3rem;
             }
             a {
@@ -67,3 +67,51 @@
         }
     }
 }
+// responsive==============================================
+@media screen and (max-width: 768px) {
+    .home-project {
+        height: 70vh;}
+
+       .home-project-content{
+        &-1,&-2{
+            height: 30vh;
+        }
+       }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    .home-project {
+        height: 70vh;}
+
+       .home-project-content{
+        &-1,&-2{
+            height: 30vh;
+        }
+       }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .home-project {
+        height: 80vh;}
+
+       .home-project-content{
+        &-1,&-2{
+            height: 30vh;
+        }
+       }
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px) {
+//     .home-project {
+//         height: 70vh;}
+
+//        .home-project-content{
+//         &-1,&-2{
+//             height: 30vh;
+//             p{
+//                 font-size: 2rem;
+//             }
+//         }
+//        }
+// }

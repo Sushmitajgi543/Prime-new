@@ -65,3 +65,72 @@
         }
     }
 }
+
+// responsive==============================================
+@media screen and (max-width: 768px) {
+    .vision-mission{
+        height: 60vh;
+
+        &-content1{
+            height: 35vh;
+
+            .pre{
+                font-size: 1.9rem;
+            }
+            p{
+                font-size: 2.9rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .vision-mission{
+        height: 60vh;
+
+        &-content1{
+            height: 35vh;
+
+            .pre{
+                font-size: 1.9rem;
+            }
+            p{
+                font-size: 2.9rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .vision-mission{
+        height: 80vh;
+
+        &-content1{
+            height: 45vh;
+
+            .pre{
+                font-size: 1.9rem;
+            }
+            p{
+                font-size: 2.9rem;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px) {
+//     .vision-mission{
+//         height: 80vh;
+
+//         &-content1{
+//             height: 45vh;
+
+//             .pre{
+//                 font-size: 1.9rem;
+//             }
+//             p{
+//                 font-size: 2.9rem;
+//             }
+//         }
+//     }
+// }

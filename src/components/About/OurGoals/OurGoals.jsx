@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Ourgoal.scss"
+import "./OurGoal.scss"
 import Container from '../../Container/Container'
 import Heading from '../../Heading/Heading'
 

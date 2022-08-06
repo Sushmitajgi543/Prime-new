@@ -50,3 +50,28 @@
         }
     }
 }
+
+// responsive==============================================
+@media screen and (max-width: 768px) {
+    .coming-soon{
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .coming-soon{
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .coming-soon{
+        height: 50vh;
+    }
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px) {
+//     .coming-soon{
+//         height: 45vh;
+//     }
+// }

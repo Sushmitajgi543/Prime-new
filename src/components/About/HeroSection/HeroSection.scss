@@ -1,11 +1,14 @@
+
+
 .abt-hero-section {
     background-image: url("../../../assets/Image/about-hero.png");
-    height: 80vh;
+    height: 89vh;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
     display: flex;
+
 
     &-left {
         width: 50%;
@@ -39,3 +42,30 @@
         }
     }
 }
+
+
+@media screen and (max-width: 768px){
+    .abt-hero-section{
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .abt-hero-section{
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .abt-hero-section{
+        height: 80vh;
+    }
+    
+}
+
+// @media screen and (min-width: 1201px) and (max-width: 1599px){
+//     .abt-hero-section{
+//         height: 80vh;
+//     }
+    
+// }
