@@ -41,12 +41,15 @@
         align-items: flex-start;
         justify-content: center;
         h3 {
-            font-size: 5rem;
+            font-size: 4.5rem;
             font-weight: 300;
+            line-height: 1.2;
             color: rgb(253, 253, 253);
             text-align: left;
+            padding-bottom: 2rem;
         }
         a {
+            font-size: 2rem;
             color: rgb(255, 255, 255);
             text-decoration: none;
         }

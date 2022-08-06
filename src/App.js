@@ -2,10 +2,9 @@ import './App.scss';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from './pages/Home';
-// import { About } from './component/App/About/About';
-// import { Contact } from './component/App/Contact/Contact';
-// import { Project } from './component/App/Project/Project';
-
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -14,9 +13,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          {/* <Route exact path="/about-us" element={<About/>} />
+          <Route exact path="/about-us" element={<About/>} />
           <Route exact path="/contact-us" element={<Contact/>} />
-          <Route exact path="/project" element={<Project/>} /> */}
+          <Route exact path="/project" element={<Projects/>} />
           
           
         </Routes>

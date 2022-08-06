@@ -1,0 +1,41 @@
+.abt-hero-section {
+    background-image: url("../../../assets/Image/about-hero.png");
+    height: 80vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+
+    &-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+    &-right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 12rem;
+            color: #fff;
+            font-family: sans-serif;
+            width: 100%;
+            font-weight: 400;
+            margin-bottom: 20px;
+
+            span {
+                img {
+                    width: 7%;
+                    height: 19%;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
