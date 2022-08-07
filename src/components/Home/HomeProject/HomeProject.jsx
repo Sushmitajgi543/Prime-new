@@ -1,18 +1,41 @@
-import React from 'react'
+import {React,useRef,useEffect} from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from 'gsap';
 import Container from '../../Container/Container'
 import Heading from '../../Heading/Heading'
+
 import { Link } from 'react-router-dom';
 import img1 from '../../../assets/Image/home1.png';
 import img2 from '../../../assets/Image/home2.png';
 import ".//Homeproject.scss"
 function HomeProject() {
+
+  gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.home-project',
+                start: 'center bottom'
+            }
+        })
+            .fromTo(".home-project h1", { opacity: 0 }, {
+               opacity: 1, duration: 1.5, 
+            })
+
+            .fromTo(".home-project p    ", { opacity: 0 },
+                { opacity: 1, duration: 1 });
+
+    })
   return (
 
-    <div className="home-project">
+    <div ref={t1} className="home-project">
       <Container>
         <div className="home-project-title">
 
-          <Heading>
+          <Heading className="h1">
             COMPLETED PROJECTS
           </Heading>
         </div>

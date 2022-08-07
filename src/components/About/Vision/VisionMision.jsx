@@ -1,10 +1,30 @@
-import React from 'react'
+import {React,useRef,useEffect} from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import  gsap  from 'gsap';
 import  Container  from '../../../components/Container/Container'
 import "./Visionmission.scss"
 import vision from '../../../assets/Image/vision.png';
 import mission from '../../../assets/Image/mission.png';
 
 function VisionMision() {
+
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.vision-mission',
+                start: 'center bottom'
+            }
+        })
+            .fromTo(".vision-mission h1", { opacity: 0 }, {
+               opacity: 1, duration: 3, 
+            })
+
+           
+    })
   return (
     <div className='vision-mission'>
 

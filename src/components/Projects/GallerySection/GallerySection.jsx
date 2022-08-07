@@ -1,17 +1,37 @@
-import React from 'react'
+import { React, useRef, useEffect } from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from 'gsap';
 import Heading from '../../Heading/Heading'
 import "./GallerySection.scss"
 import img1 from '../../../assets/Image/pimg2.png';
 import img2 from '../../../assets/Image/pimg1.png';
 import img3 from '../../../assets/Image/pimg3.png';
 function GallerySection() {
-  return (
-    <div className="gallery-section">
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.gallery-section',
+                start: 'center bottom'
+            }
+        })
+            .fromTo(".gallery-section h1", { opacity: 0 }, {
+                opacity: 1, duration: 2,
+            })
 
-<div className="gallery-section-left">
+
+    })
+
+    return (
+        <div className="gallery-section">
+
+            <div className="gallery-section-left">
                 <div className="gallery-section-left-top">
                     <Heading>YOUR HOME IN THE
-                        MIDST OF NATURE</Heading> 
+                        MIDST OF NATURE</Heading>
                 </div>
                 <div className="gallery-section-left-middle">
                     <div className="gallery-section-left-middle-left">
@@ -39,8 +59,8 @@ function GallerySection() {
                 </div>
             </div>
 
-    </div>
-  )
+        </div>
+    )
 }
 
 export default GallerySection

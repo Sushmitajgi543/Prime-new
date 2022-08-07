@@ -1,4 +1,6 @@
-import React from 'react'
+import {React,useRef,useEffect} from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import  gsap  from 'gsap';
 import Heading from '../..//Heading/Heading'
 import "./StunningSection.scss"
 import gym from '../../../assets/Image/gym.png';
@@ -9,6 +11,23 @@ import plaza from '../../../assets/Image/plaza.png';
 import threater from '../../../assets/Image/threater.png';
 
 function StunningSection() {
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.stunning-section',
+                start: 'center bottom'
+            }
+        })
+            .fromTo(".stunning-section h1", { opacity: 0 }, {
+               opacity: 1, duration: 1.5, 
+            })
+
+           
+    })
     return (
         <div className="stunning-section">
 

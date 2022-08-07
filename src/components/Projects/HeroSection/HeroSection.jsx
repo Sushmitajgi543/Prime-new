@@ -1,8 +1,24 @@
-import React from 'react'
+import {React,useRef,useEffect} from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import  gsap  from 'gsap';
 import Container from '../../Container/Container'
 import projectImg from '../../../assets/Image/project-img.png';
 import "./HeroSection.scss"
 function HeroSection() {
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            
+        })
+            .fromTo(".pjt-hero-section h1", { opacity: 0 }, {
+               opacity: 1, duration: 2, 
+            })
+
+           
+    })
     return (
         <div className='pjt-hero-section'>
 

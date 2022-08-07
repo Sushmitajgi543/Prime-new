@@ -1,10 +1,31 @@
-import React from 'react'
+import {React,useRef,useEffect} from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import  gsap  from 'gsap';
 import ".//Testimonial.scss"
 import Container from '../../Container/Container'
 import quotation from '../../../assets/Image/quotation.png';
 import Heading from '../../Heading/Heading';
 
 function Testimonial() {
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.testimonial',
+                start: 'center bottom'
+            }
+        })
+            .fromTo(".testimonial h1", { opacity: 0 }, {
+               opacity: 1, duration: 1.5, 
+            })
+
+            .fromTo(".testimonial h3 ", { opacity: 0 },
+                { opacity: 1, duration: 1 });
+
+    })
     return (
         <div className='testimonial' >
             <Container>

@@ -1,8 +1,30 @@
-import React from 'react'
+import {React,useRef,useEffect} from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import  gsap  from 'gsap';
 import "./Homeabout.scss"
 import Container from '../../Container/Container'
 import { Link } from 'react-router-dom';
 function HomeAbout() {
+
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.home-about',
+                start: 'center bottom'
+            }
+        })
+            .fromTo(".home-about h1", { opacity: 0 }, {
+               opacity: 1, duration: 1.5, 
+            })
+
+            .fromTo(".home-about p    ", { opacity: 0 },
+                { opacity: 1, duration: 1.5 });
+
+    })
     return (
         <div className='home-about'>
             <Container>

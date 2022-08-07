@@ -8,6 +8,7 @@ import HomeBenchmark from '../components/Home/HomeBenchmark/HomeBenchmark'
 import HomeHero from '../components/Home/HomeHero/HomeHero'
 import HomeProject from '../components/Home/HomeProject/HomeProject'
 import Testimonial from '../components/Home/Testimonial/Testimonial'
+import { gsap } from 'gsap';
 
 function Home() {
   return (
