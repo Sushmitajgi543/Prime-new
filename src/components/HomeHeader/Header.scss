@@ -90,11 +90,22 @@
 }
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
+
+    .header-section{
+        p{
+            display: none;
+        }
+        ul li a{
+            font-size: 4rem;
+        }
+    }
+    
     
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {

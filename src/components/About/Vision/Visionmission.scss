@@ -67,24 +67,30 @@
 }
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .vision-mission{
-        height: 60vh;
+        height: auto;
+        padding: 20rem 0;
+        
+        .container-custom{
+            flex-direction: column;
+        }
 
         &-content1{
-            height: 35vh;
+            height: 25vh;
+            width: 100%;
 
             .pre{
-                font-size: 1.9rem;
+                font-size: 2.9rem;
             }
             p{
-                font-size: 2.9rem;
+                font-size: 4rem;
             }
         }
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .vision-mission{
         height: 60vh;
 
@@ -92,7 +98,7 @@
             height: 35vh;
 
             .pre{
-                font-size: 1.9rem;
+                font-size: 2rem;
             }
             p{
                 font-size: 2.9rem;

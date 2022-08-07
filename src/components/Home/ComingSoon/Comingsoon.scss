@@ -52,20 +52,42 @@
 }
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
-    .coming-soon{
-        height: 40vh;
+@media screen and (max-width: 767px) {
+    .coming-soon {
+        height: 30vh;
+
+        .container-custom {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+        &-left {
+            width: 100%;
+            h1 {
+                text-align: center;
+            }
+        }
+
+        &-right {
+            width: 100%;
+            align-items: center;
+            h1 {
+                text-align: center;
+            }
+        }
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .coming-soon{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .coming-soon {
         height: 40vh;
     }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-    .coming-soon{
+    .coming-soon {
         height: 50vh;
     }
 }

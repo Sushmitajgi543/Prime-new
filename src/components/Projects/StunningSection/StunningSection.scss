@@ -85,13 +85,19 @@
 }
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
+
+// @media screen and (max-width: 426px) {
+//     .stunning-section{
+//         height: 50vh;
+//     }
+// }
+@media  screen and (max-width:767px) {
     .stunning-section{
-        height: 70vh;
+        height: 40vh;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .stunning-section{
         height: 70vh;
     }

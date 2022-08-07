@@ -109,13 +109,38 @@
 }
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .our-goals{
-        height: 80vh;
+        height: auto;
+        padding: 20rem 0;
+
+        &-content{
+            flex-direction: column;
+
+            &-left{
+                display: none;
+            }
+            &-right{
+                width: 100%;
+            }
+            &-middle{
+                padding: 0 15rem;
+                width: 100%;
+                span{
+                    font-size: 6rem;
+                }
+                h1{
+                    font-size: 6rem;
+                }
+                p{
+                    font-size: 4rem;
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .our-goals{
         height: 80vh;
     }

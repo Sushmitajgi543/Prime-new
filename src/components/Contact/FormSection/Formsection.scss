@@ -81,13 +81,41 @@
 
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .form-section{
-        height: 60vh;
+        height: auto;
+        padding: 20rem 0;
+        flex-direction: column;
+
+        &-left{
+            width: 100%;
+
+        span{
+            display: none;
+        }
+        }
+        &-right{
+            width: 100%;
+            padding: 10rem 15rem;
+
+            &-form-group{
+                padding: 3rem;
+            }
+
+            input{
+                font-size: 5rem;
+                padding: 2rem ;
+            }
+            button{
+                font-size: 5rem;
+                padding: 3rem 5rem;
+            }
+        }
+
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
     .form-section{
         height: 60vh;

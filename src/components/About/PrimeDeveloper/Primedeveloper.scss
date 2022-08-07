@@ -51,17 +51,27 @@
 }
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .Prime-developer{
 
-        height: 30vh;
+        height: auto;
+        padding: 20rem 0;
+
+        &-left{
+            width:100%;
+        }
+        &-right{
+            display: none;
+        }
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .Prime-developer{
 
         height: 30vh;
+
+       
     }
 }
 

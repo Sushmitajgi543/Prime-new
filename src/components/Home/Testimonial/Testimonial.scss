@@ -76,9 +76,33 @@
 }
 
 // responsive==============================================
-@media screen and (max-width: 768px) {
+@media  screen and (max-width:767px) {
 .testimonial{
     height: 45vh;
+
+    &-content{
+        flex-direction: column;
+        width: 100%;
+
+
+        &-left,&-right{
+            width: 100%;
+            border: none;
+           div {
+            h3{
+                font-size: 5.5rem;
+            }
+            p{
+                font-size: 3.5rem;
+            }
+           }
+        }
+
+    }
+    .testimonial-content-right {
+        border: none;
+        padding: 0;
+    }
 
 }
 }

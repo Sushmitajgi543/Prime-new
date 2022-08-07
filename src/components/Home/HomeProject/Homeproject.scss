@@ -64,22 +64,42 @@
         }
         .home-project-content-2 {
             padding: 0 7rem 0 11.5rem;
-        }
+        }   
     }
 }
 // responsive==============================================
-@media screen and (max-width: 768px) {
+@media  screen and (max-width:767px) {
     .home-project {
-        height: 70vh;}
+        height: auto;
+        padding: 20rem 0;
+        .custom-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
        .home-project-content{
+        flex-direction: column;
         &-1,&-2{
-            height: 30vh;
+            width: 100%;
+            height: 25vh;
+
+            p{
+                font-size: 4rem;
+            }
+            h3{
+                font-size: 5rem;
+            }
+            a{
+                font-size: 3rem;
+            }
         }
        }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
     .home-project {
         height: 70vh;}

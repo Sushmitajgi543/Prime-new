@@ -34,17 +34,17 @@ function Header() {
                     aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                     placement="end"
                   >
-                    <Offcanvas.Header closeButton>
+                    <Offcanvas.Header className='close' closeButton>
                       <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                         Offcanvas
                       </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                       <Nav className="justify-content-end flex-grow-1 pe-3">
-                        <Link to="/">  <Nav.Link href="#action1">Home</Nav.Link></Link>
-                        <Link to="/project"><Nav.Link href="#action2">Projects</Nav.Link></Link>
-                        <Link to="/about-us"><Nav.Link href="#action2">Prime Story</Nav.Link></Link>
-                        <Link to="/contact-us"><Nav.Link href="#action2">Inquiry</Nav.Link> </Link>
+                        <Link className='nav-a' to="/">  <Nav.Link  className='nav-a'  href="#action1">Home</Nav.Link></Link>
+                        <Link className='nav-a' to="/project"><Nav.Link  className='nav-a' href="#action2">Projects</Nav.Link></Link>
+                        <Link className='nav-a' to="/about-us"><Nav.Link  className='nav-a' href="#action2">Prime Story</Nav.Link></Link>
+                        <Link className='nav-a' to="/contact-us"><Nav.Link className='nav-a'  href="#action2">Inquiry</Nav.Link> </Link>
                       </Nav>
 
                     </Offcanvas.Body>
