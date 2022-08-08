@@ -59,11 +59,40 @@
         }
     }
 }
+#offcanvasNavbar-expand-lg{
+    background-color: rgb(5, 31, 39);;
+}
+#nav-list{
+    display: flex;
+    padding: 10rem 0;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.nav-a{
+    font-size: 4.5rem;
+    color:#fff;
+    padding: 2rem 0;
+    text-decoration: none;
+}
+#close{
+    width:50%;
+    font-size: 4rem;
+    button{
+        background-image: url("../../assets/Image/close.png");
+    }
+}
+
+
 #container {
     display: flex;
     padding-right: 7rem;
+    background-color: rgb(5, 31, 39);
     justify-content: flex-end;
-
+    
+   
     #toggle {
         .navbar-toggler-icon {
             width: 3em !important;
@@ -90,11 +119,9 @@
         
     }
     .nav-a{
-        font-size: 6.5rem;
-        color:black;
-        text-decoration: none;
+        font-size: 7.5rem;
     }
-    .close{
+    #close{
         font-size: 7rem;
         padding: 4rem;
     }
