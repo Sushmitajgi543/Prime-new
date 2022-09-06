@@ -3,6 +3,7 @@ import gsap from 'gsap';
 
 import Header from '../../HomeHeader/Header'
 import "./Homehero.scss"
+import Slider from '../Carousel/Carousel';
 function HomeHero() {
   const el = useRef();
     const q = gsap.utils.selector(el);
@@ -20,12 +21,13 @@ function HomeHero() {
   })
   return (
     <div ref={t1} className='hero-section' >
+      <Slider/>
 
-        <Header/>
+        {/* <Header/>
         <div className='hero-section-content'>
 
            <h1>We Build Great Homes</h1>
-          </div>
+          </div> */}
        
     </div>
   )
